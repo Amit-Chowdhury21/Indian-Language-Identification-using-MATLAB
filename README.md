@@ -5,4 +5,4 @@ Link: https://www.tandfonline.com/doi/full/10.1080/0952813X.2019.1631392
 
 In Main code, an audio file from Indic TTS database is used to compute a spectrogram image and then extract the features from it. Here we have extracted the features using three texture descriptors: CLBP (Complete Linear Binary Pattern), LBPHF (Linear Binary Pattern Histogram Fourier) and Wavelet. In main code, functions of each feature extractors are called and executed. In MATLAB Workspace, feature matrix of each texture descriptors file will be seen. Size of CLBP: N x 118, Size of LBPHF: N X 76, Size of Wavelet: N x 9, where N is the total number of audio files present in the given folder. Then all different feature matrices of CLBP, LBPHF and Wavelet are combined into single matrix of size N x 203. 
 
-In next step, the combined feature set is passed through a feature selection algorithm which is Grey Wolf Optimization.  
+In next step, the combined feature set is passed through a feature selection algorithm which is Grey Wolf Optimizer, "Seyedali Mirjalili, Seyed Mohammad Mirjalili & Andrew Lewis", Advances in Engineering Software Vol. 69, March 2014, Pages 46-61.
